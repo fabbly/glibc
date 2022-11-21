@@ -1,8 +1,8 @@
 FROM alpine 
 LABEL maintainer="fabbly" \
         org.label-schema.name="alpine-glibc" \
-        org.label-schema.version=2.34-r0
-ENV GLIBC_VERSION 2.34-r0
+        org.label-schema.version=2.35-r0
+ENV GLIBC_VERSION 2.35-r0
 RUN \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
     wget -O glibc.apk https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk && \
